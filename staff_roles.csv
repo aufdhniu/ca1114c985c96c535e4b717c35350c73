@@ -1,0 +1,5 @@
+Role,Discount,CanVoid,CanComp
+Server,50,False,False
+Manager,50,True,True
+Host,25,False,False
+Kitchen,50,False,False
