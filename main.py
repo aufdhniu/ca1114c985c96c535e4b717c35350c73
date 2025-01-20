@@ -1,11 +1,23 @@
 from restaurant_pos_classes import (MenuItem, StaffRole, Staff, Table, Order, 
-                      RestaurantReport, DataLoader)
+                      RestaurantReport, DataLoader, TableStatus)
 from datetime import datetime, time
 
 # Load data from CSV files
 menu_items = DataLoader.load_menu_items('menu_items.csv')
 staff_roles = DataLoader.load_staff_roles('staff_roles.csv')
 tables = DataLoader.load_tables('tables.csv')
+
+# print("---------------------------------------")
+# print()
+# for menu_item in menu_items:
+#     print(f"category: {menu_item.category}, code: {menu_item.code}, name: {menu_item.name}, price: {menu_item.price}")
+# print()
+# print("---------------------------------------")
+# print()
+# for staff in staff_roles:
+#     print(f"cancomp: {staff.cancomp}, discount: {staff.discount}, role: {staff.role}")
+# print("---------------------------------------")
+# print()
 
 # Create report instance
 restaurant_report = RestaurantReport()
